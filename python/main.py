@@ -3,7 +3,6 @@ from google.oauth2 import service_account
 # from google.genai.types import Content, Part
 
 service_account_key_path="/Users/kade.chen/go-kade-project/github/mcenter/etc/kade-poc.json"
-        # Create credentials from the service account key file
 credentials = service_account.Credentials.from_service_account_file(
             service_account_key_path,
             scopes=['https://www.googleapis.com/auth/cloud-platform']

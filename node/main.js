@@ -14,7 +14,6 @@ async function generateContent(
     apiVersion: 'v1',
     googleAuthOptions: {
       scopes: ['https://www.googleapis.com/auth/cloud-platform'],
-
       //credentials&keyFilename任选其一
       // keyFilename: '/Users/kade.chen/go-kade-project/github/mcenter/etc/kade-poc.json',
       credentials: {
@@ -45,4 +44,3 @@ async function generateContent(
 }
 generateContent().catch(console.error);
 //1.npm install @google/genai
-//2.

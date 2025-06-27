@@ -27,7 +27,6 @@ func main() {
 		Project: "kade-poc",
 		Location:    "us-central1",
 		Credentials: creds1,
-
 		HTTPOptions: genai.HTTPOptions{APIVersion: "v1"},
 	})
 	if err != nil {
