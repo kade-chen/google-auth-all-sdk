@@ -15,20 +15,20 @@ async function generateContent(
     googleAuthOptions: {
       scopes: ['https://www.googleapis.com/auth/cloud-platform'],
       //credentials&keyFilename任选其一
-      // keyFilename: '/Users/kade.chen/go-kade-project/github/mcenter/etc/kade-poc.json',
-      credentials: {
-        type: 'xxxxxxxxxxx',
-        project_id: 'xxxxxxxxxxx',
-        client_email: 'xxxxxxxxxxx',
-        private_key_id: 'xxxxxxxxxxx',
-        private_key: 'xxxxxxxxxxx',
-        client_id: 'xxxxxxxxxxx',
-        auth_uri: 'xxxxxxxxxxx',
-        token_uri: 'xxxxxxxxxxx',
-        auth_provider_x509_cert_url: 'xxxxxxxxxxx',
-        client_x509_cert_url: 'xxxxxxxxxxx',
-        universe_domain: 'xxxxxxxxxxx'
-      }
+      keyFilename: '/Users/kade.chen/go-kade-project/github/mcenter/etc/kade-poc.json',
+      // credentials: {
+      //   type: 'xxxxxxxxxxx',
+      //   project_id: 'xxxxxxxxxxx',
+      //   client_email: 'xxxxxxxxxxx',
+      //   private_key_id: 'xxxxxxxxxxx',
+      //   private_key: 'xxxxxxxxxxx',
+      //   client_id: 'xxxxxxxxxxx',
+      //   auth_uri: 'xxxxxxxxxxx',
+      //   token_uri: 'xxxxxxxxxxx',
+      //   auth_provider_x509_cert_url: 'xxxxxxxxxxx',
+      //   client_x509_cert_url: 'xxxxxxxxxxx',
+      //   universe_domain: 'xxxxxxxxxxx'
+      // }
     }
     // apiKey: "AIzaSyBih5Bmh8I5dK3QxiWF7Plqr35O_4NIvIY"  
   });
