@@ -16,4 +16,4 @@
 7. Set the `GOOGLE_CLOUD_PROJECT` environment variable to the name of the Project
 8. Set the `GOOGLE_CLOUD_LOCATION` environment variable to the location of the API (default is `global`)
 
-## Usage
+## Usage1
