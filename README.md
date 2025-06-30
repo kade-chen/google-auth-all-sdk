@@ -5,6 +5,7 @@
 - Python
 - Java
 - Node.js
+- C#
 
 ### Prerequisites
 1. Create a Google Cloud Project
@@ -21,5 +22,6 @@
 - [Python](/python/main.py)
 - [Java](/java/src/main/java/GenerateContentWithText.java)
 - [Node.js](/node/main.js)
+- [C#](/C#/Program.cs)
 
 ## Setup30
