@@ -9,13 +9,13 @@ async function generateContent(
 ) {
   const ai = new GoogleGenAI({
     vertexai: true,
-    project: "kade-poc",
+    project: "xxxxx",
     location: "us-central1",
     apiVersion: 'v1',
     googleAuthOptions: {
       scopes: ['https://www.googleapis.com/auth/cloud-platform'],
       //credentials&keyFilename任选其一
-      keyFilename: '/Users/kade.chen/go-kade-project/github/mcenter/etc/kade-poc.json',
+      keyFilename: 'xxxxx.json',
       // credentials: {
       //   type: 'xxxxxxxxxxx',
       //   project_id: 'xxxxxxxxxxx',

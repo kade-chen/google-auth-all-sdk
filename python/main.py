@@ -2,7 +2,7 @@ from google import genai
 from google.oauth2 import service_account
 # from google.genai.types import Content, Part
 
-service_account_key_path="/Users/kade.chen/go-kade-project/github/mcenter/etc/kade-poc.json"
+service_account_key_path="xxxxx.json"
 credentials = service_account.Credentials.from_service_account_file(
             service_account_key_path,
             scopes=['https://www.googleapis.com/auth/cloud-platform']
@@ -11,7 +11,7 @@ credentials = service_account.Credentials.from_service_account_file(
 client = genai.Client(
     vertexai=True,
     credentials=credentials,
-    project="kade-poc",
+    project="xxxxx",
     location = "global",
 )
 response = client.models.generate_content(

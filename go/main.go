@@ -16,15 +16,15 @@ func main() {
 	creds1, _ = credentials.DetectDefault(&credentials.DetectOptions{
 		Scopes: []string{"https://www.googleapis.com/auth/cloud-platform"},
 		// CredentialsJSON: data,
-		CredentialsFile: "/Users/kade.chen/go-kade-project/github/mcenter/etc/kade-poc.json",
+		CredentialsFile: "xxxxx.json",
 	})
 	client, err := genai.NewClient(context.Background(), &genai.ClientConfig{
 		//目前不支持，另外这个apikey，不能backend，projectid,location,credentials都填，否则会报错
-		//https://console.cloud.google.com/apis/credentials?project=kade-poc (Vertex AI API/Generative Language API)
+		//https://console.cloud.google.com/apis/credentials?project=xxxxx (Vertex AI API/Generative Language API)
 		//https://console.developers.google.com/apis/api/generativelanguage.googleapis.com/overview?project=499036589398
 		// APIKey:   "AIzaSyAWtMUuGHBtUCSH829TcHiCO21m_8w08lU",
 		Backend: genai.BackendVertexAI,
-		Project: "kade-poc",
+		Project: "xxxxx",
 		Location:    "us-central1",
 		Credentials: creds1,
 		HTTPOptions: genai.HTTPOptions{APIVersion: "v1"},

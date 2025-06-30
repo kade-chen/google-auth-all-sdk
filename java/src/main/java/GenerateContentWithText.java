@@ -18,7 +18,7 @@ public class GenerateContentWithText {
   }
 
   public static String generateContent(String modelId) throws Exception {
-    String path = "/Users/kade.chen/go-kade-project/github/mcenter/etc/kade-poc.json";
+    String path = "xxxxx.json";
 
     InputStream inputStream = new FileInputStream(path);
     List<String> SCOPES = List.of("https://www.googleapis.com/auth/cloud-platform");
@@ -27,7 +27,7 @@ public class GenerateContentWithText {
     credentials = (credentials).createScoped(SCOPES);
 
     try (Client client = Client.builder()
-        .project("kade-poc")
+        .project("xxxxx")
         .location("us-central1")
         .httpOptions(HttpOptions.builder().apiVersion("v1").build())
         .vertexAI(true)
