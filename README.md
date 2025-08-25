@@ -7,7 +7,7 @@
 - Node.js
 - C#
 
-### Prerequisites
+## Prerequisites
 1. Create a Google Cloud Project
 2. [Enable the Vertex AI API](https://console.cloud.google.com/apis/library/aiplatform.googleapis.com) 
 3. [Enable the Cloud Storage API](https://console.cloud.google.com/apis/library/storage-component.googleapis.com)
