@@ -19,8 +19,8 @@
 
 ### Usage
 - [Go](/go/main.go)
-- [Python](/python/main.py)
-- [Java](/java/src/main/java/GenerateContentWithText.java)
+- [Python](/python/GenerateWithVertexAI.py)
+- [Java](/java/src/main/java/GenerateWithVertexAI.java)
 - [Node.js](/node/main.js)
 - [C#](/C#/Program.cs)
 
