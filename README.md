@@ -7,7 +7,7 @@
 - Node.js
 - C#
 
-## Prerequisites -->> Choose one of the following:
+## Prerequisites ➡️ Choose one of the following:
 
 ### 1.Service Account
 1. Create a Google Cloud Project
@@ -19,7 +19,7 @@
 7. Download the Key as a JSON file
 8. Use the JSON file to authenticate the SDK
 
-### 2.Security Configuration ->> Mixed use of API-KEY and Service Account
+### 2.Security Configuration ➡️ Mixed use of API-KEY and Service Account
 1. Create a Google Cloud Project
 2. [Enable the Vertex AI API](https://console.cloud.google.com/apis/library/aiplatform.googleapis.com) 
 3. [Enable the Cloud Storage API](https://console.cloud.google.com/apis/library/storage-component.googleapis.com)
