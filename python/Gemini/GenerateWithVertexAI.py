@@ -9,11 +9,29 @@ from google.genai.types import (
 from google.oauth2 import service_account
 
 ####################################
-#  Google AI Studio/Gemini API     #
+#        Vertex AI Gemini API      #
 ####################################
-client = genai.Client(api_key="xxx")
+
+# 注意：请确保此路径指向您实际的服务账户密钥文件
+service_account_key_path="xxx.json"
+# 身份验证范围
+credentials = service_account.Credentials.from_service_account_file(
+            service_account_key_path,
+            scopes=['https://www.googleapis.com/auth/cloud-platform']
+)
+
+# 初始化客户端，指定 Vertex AI 项目、区域和凭证
+client = genai.Client(
+    vertexai=True,
+    credentials=credentials,
+    project="your_preject", # 替换为您的项目ID
+    location = "us-central1", # 替换为您的区域
+)
+
+# --- 模型配置 (与 Java 逻辑一致) ---
 
 # 1. 系统指令 (System Instruction) - 启用中文回答
+# "你是一位人工智能专家讲解员。请用中文提供简洁、高层次的摘要，适合初学者理解，保持鼓励和清晰的语气。"
 system_instruction = "你是一位人工智能专家讲解员。请用中文提供简洁、高层次的摘要，适合初学者理解，保持鼓励和清晰的语气。"
 
 # 2. 安全设置 (Safety Settings)
@@ -58,5 +76,5 @@ print(response.text)
 # Here's a simplified overview:
 # ...
 
-#  /usr/bin/python3 /Users/kade.chen/go-kade-project/github/google-auth-all-sdk/python/GenerateWithVertexAI.py
+#  /usr/bin/python3 /Users/kade.chen/go-kade-project/github/google-auth-all-sdk/python/Gemini.GenerateWithVertexAI.py
 #  Python 3.9.6

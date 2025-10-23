@@ -1,3 +1,5 @@
+package Gemini;
+
 import com.google.genai.Client;
 import com.google.genai.types.*;
 
