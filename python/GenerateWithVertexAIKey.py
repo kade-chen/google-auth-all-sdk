@@ -9,9 +9,10 @@ from google.genai.types import (
 from google.oauth2 import service_account
 
 ####################################
-#  Google AI Studio/Gemini API     #
+#        Vertex AI Studio          #
 ####################################
-client = genai.Client(api_key="xxx")
+
+client = genai.Client(vertexai=True, api_key="xxx")
 
 # 1. 系统指令 (System Instruction) - 启用中文回答
 system_instruction = "你是一位人工智能专家讲解员。请用中文提供简洁、高层次的摘要，适合初学者理解，保持鼓励和清晰的语气。"
@@ -58,5 +59,5 @@ print(response.text)
 # Here's a simplified overview:
 # ...
 
-#  /usr/bin/python3 /Users/kade.chen/go-kade-project/github/google-auth-all-sdk/python/Gemini.GenerateWithVertexAI.py
+#  /usr/bin/python3 /Users/kade.chen/go-kade-project/github/google-auth-all-sdk/python/GenerateWithVertexAI.py
 #  Python 3.9.6
